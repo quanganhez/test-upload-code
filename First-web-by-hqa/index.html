@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arsenal</title>
+    <!-- ./ là ngang cấp với index -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/player.css">
+    <link rel="stylesheet" href="./assets/css/shop.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" />
+    <link rel="stylesheet" href="./assets/themify-icons/themify-icons.css">
+    <link rel="icon" href="./assets/img/favicon logo.png" type="image/x-icon" />
+</head>
+<body>
+    <section class="main-content">
+        <header class="header">
+          <!-- begin control -->
+          <div class="control">
+            <div class="logo">
+              <a href="#"
+                ><img
+                  src="/assets/img/logo.png"
+              /></a>
+            </div>
+            <!-- begin : nav  -->
+            <div class="nav-bar">
+              <a href="#home" class="nav-items">my arsenal</a>
+              <a href="#first-team" class="nav-items">first team</a>
+              <a href="#manager" class="nav-items">manager</a>
+              <a href="#shop" class="nav-items">shop</a> 
+            </div>
+          </div>
+          <!-- end : nav -->
+          <!-- end control -->
+
+          <!-- Begin: button search -->
+          <div class = "search">
+            <form action="">
+              <input type="search" required>
+              <i class="fa fa-search"></i>
+            </form>
+          </div>
+            <!-- end: button search -->
+        </header>
+        <section class="view-content"> 
+        <!-- Begin : Home -->
+        <main id="home">
+          <div class="radio-image">
+            <img src="/assets/img/slider-1.jpg" alt="" class="image-items first">
+            <img src="/assets/img/slider-2.jpg" alt="" class="image-items">
+            <img src="/assets/img/slider-3.jpg" alt="" class="image-items">
+            <img src="/assets/img/slider-4.jpg" alt="" class="image-items">
+          </div>
+          <div class="button-set">
+            <div id="radio1" class="btn-radio" onclick="radio1()"></div>
+            <div id="radio2" class="btn-radio" onclick="radio2()"></div>
+            <div id="radio3" class="btn-radio" onclick="radio3()"></div>
+            <div id="radio4" class="btn-radio" onclick="radio4()"></div>
+          </div>
+        </main>
+          <!-- BEGIN: first team -->
+          <main id="first-team">
+            <div class="roler">First team</div>
+            <div class="team-position">
+              <!-- GK -->
+              <div class="position-names">Goalkeepers</div>
+              <div class="sub-position">
+                <div class="position-btn">
+                  <img src="/assets/img/ga-1.webp" class="position-img">
+                  <div class="position-info">  
+                    <div class="position-number">32</div>
+                    <div class="position-name">aaron ramsdale</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Defenders -->
+            <div class="team-position">
+              <div class="position-names">Defenders</div>
+              <div class="sub-position defend">
+                <div class="position-btn">
+                  <img src="/assets/img/lb.png" class="position-img">
+                  <div class="position-info">  
+                    <div class="position-number">35</div>
+                    <div class="position-name">Oleksandr Zinchenko</div>
+                  </div>
+                </div>
+                <div class="position-btn">
+                  <img src="/assets/img/cb-1.png" class="position-img">
+                  <div class="position-info">  
+                    <div class="position-number">6</div>
+                    <div class="position-name">Gabriel Magalhães</div>
+                  </div>
+                </div>
+                <div class="position-btn">
+                  <img src="/assets/img/cb-2.png" class="position-img">
+                  <div class="position-info">  
+                    <div class="position-number">12</div>
+                    <div class="position-name">William Saliba</div>
+                  </div>
+                </div>
+                <div class="position-btn">
+                  <img src="/assets/img/rb.png" class="position-img">
+                  <div class="position-info">  
+                    <div class="position-number">4</div>
+                    <div class="position-name">Ben White</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- midfielders -->
+            <div class="team-position">
+              <div class="position-names ">MIDFIELDERS</div>
+              <div class="sub-position middle">
+                <div class="position-btn">
+                  <img src="/assets/img/cm-1.png" class="position-img">
+                  <div class="position-info">  
+                    <div class="position-number">34</div>
+                    <div class="position-name">granit xhaka</div>
+                  </div>
+                </div>
+                <div class="position-btn">
+                  <img src="/assets/img/cm-3.png" class="position-img">
+                  <div class="position-info">  
+                    <div class="position-number">8</div>
+                    <div class="position-name">martin ødegaard</div>
+                  </div>
+                </div>
+                <div class="position-btn">
+                  <img src="/assets/img/cm-2.png" class="position-img">
+                  <div class="position-info">  
+                    <div class="position-number">5</div>
+                    <div class="position-name">thomas partey</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- forwards -->
+            <div class="team-position">
+              <div class="position-names">forwards</div>
+              <div class="sub-position">
+                <div class="position-btn">
+                  <img src="/assets/img/lw.png" class="position-img">
+                  <div class="position-info">  
+                    <div class="position-number">11</div>
+                    <div class="position-name">Gabriel Martinelli</div>
+                  </div>
+                </div>
+                <div class="position-btn">
+                  <img src="/assets/img/st.png" class="position-img">
+                  <div class="position-info">  
+                    <div class="position-number">9</div>
+                    <div class="position-name">gabriel jesus</div>
+                  </div>
+                </div>
+                <div class="position-btn">
+                  <img src="/assets/img/rw.png" class="position-img">
+                  <div class="position-info">  
+                    <div class="position-number">7</div>
+                    <div class="position-name">bukayo saka</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+          <!-- END : first-team -->
+
+         <!-- Begin : Manager -->
+         <main id="manager">
+            <div class="role">Manager</div>
+              <div class="manager-info">
+                <div class="manager-name">mikel arteta</div>
+                <div class="manager-mes">"If we win against them, we are in the Champions League next season. And not that you need any more motivation and to tell them anything less than that. The opportunity is there, and we are going to play and go for it, like we always do."</div>
+              </div>
+              <div class="manager-img">
+                <img src="/assets/img/hlv.png" alt="" class="manager-avt">
+              </div>
+          </main>
+          <!-- End : Manager -->
+          <main id="shop">
+            <div class="roled">Shop</div>
+              <!-- Begin: shop items -->
+                <ul class="products">
+                  <li>
+                <div class="product-image-wrapper">
+                    <div class="product-items js-product-items">
+                    <a href="#shop" class="product-thumb">
+                      <img src="/assets/img/kit-2.png">
+                    </a>
+                    <!-- BUY NOW -->
+                    <div class="product-info">
+                      <a href="#shop" class="product-name">Arsenal 22/23 Away Shirt</a>
+                      <a href="#shop" class="product-price">£70.00</a>
+                      <!-- Begin : Buy Now button -->
+                      <div class="buttons">
+                        <div class="container">
+                          <a href="#shop" class="btn effect04" data-sm-link-text="now">
+                            <span>buy</span>
+                          </a>
+                        </div>
+                      </div>                      
+                        <!-- End : Buy now button -->
+                      </a>
+                    </div>
+                </div>
+              </div>
+              </li>
+              <li>
+              <div class="product-image-wrapper">
+                <div class="product-items js-product-items">
+                    <a href="#shop" class="product-thumb">
+                      <img src="/assets/img/kit-3.png">
+                    </a>
+                    <!-- BUY NOW -->
+                    <div class="product-info">
+                      <a href="#shop" class="product-name">Arsenal 22/23 Third Shirt</a>
+                      <a href="#shop" class="product-price">£70.00</a>
+                    <!-- begin : BUY NOW BUTTON -->
+                    <div class="buttons">
+                      <div class="container">
+                        <a href="#shop" class="btn effect04" data-sm-link-text="now">
+                          <span>buy</span>
+                        </a>
+                      </div>
+                    </div>  
+                    <!-- End : BUY NOW BUTTOn -->
+                    </div>
+                </div>
+                </div>
+              </li>
+            </ul>
+          </main>
+      </section>
+      <!-- begin : Footer -->
+      <footer class="footer">
+        <div class="sponsor">
+          <div class="sponsor-items">
+            <img src="./assets/img/Adidas_Logo.svg.png">
+          </div>
+          <div class="sponsor-items">
+            <img src="/assets/img/Emirates-Logo-1985-1999.png">
+          </div>
+          <div class="sponsor-items">
+            <img src="./assets/img/Visit+Rwanda+Black.png">
+          </div>
+          <div class="sponsor-items">
+            <img src="./assets/img/Premier_League-Logo.wine.png">
+          </div>
+        </div>
+        <div class="contact">
+          <div class="rounded-social-buttons">
+            <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+      </footer>
+      
+      <!-- Begin : modal Buy Now -->
+      <div class="modal js-modal">
+          <div class="modal-overlay js-modal-overlay">
+              <div class="modal-close js-modal-close">
+                  <i class="ti-close"></i>
+              </div>
+              <header class="modal-header">
+                  <i class="ti-briefcase"></i>
+                      Tickets
+              </header>
+
+              <div class="modal-body">
+                <label for="ticket-quality" class="modal-label">
+                    <i class="ti-shopping-cart"></i>
+                      £70.00 per product    
+                </label>
+                <input id="ticket-quality" type="text" class="modal-input" placeholder="How many?">
+              
+                <label for="ticket-email" class="modal-label">
+                  <i class="ti-user"></i>
+                    Send to   
+              </label>
+              <input id="ticket-email" type="text" class="modal-input" placeholder="Enter your location.....?">
+            
+              <button id="buy-tickets">
+                PAY <i class="ti-check"></i>
+              </button>
+            </div>
+
+            <div class="modal-footer">
+                <p class="modal-help"> Need <a href="#">help?</a></p>
+            </div>
+          </div>
+        </div>
+        <!-- end : modal ticket -->
+      <script src="/search.js"></script>
+      <script src="/buyticket.js"></script>
+      <script src="/home.js"></script>
+</body>
+</html>

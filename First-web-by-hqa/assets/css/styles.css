@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
+html {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: inherit;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 50px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* main content */
+.main-content {
+    position: relative;
+    color: rgb(228, 213, 213);
+    height: 650px;
+    margin: 0em;
+}
+/* layout */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #ff0000;
+    padding: 1em 2em;
+    width: 96%;
+    z-index: 100;
+    top: 0;
+}
+.option {
+    float: right;
+}
+.control {
+    display: flex;
+}
+.nav-bar {
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+}
+.nav-bar .nav-items {
+    padding: 1em;
+}
+/* trasition */
+.nav-items::after {
+    content: " ";
+    display: block;
+    height: 3px;
+    background-color: #fff;
+    margin-top: 5px;
+    transform: scale(0);
+    transition: all 0.5s;
+}
+.nav-items:hover::after {
+    transform: scale(1);
+}
+.header .search-btn {
+    font-size: 30px;
+    cursor: pointer;
+}
+.search {
+    height: 20px;
+    width: 20%;
+}
+form{
+    position: relative;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 2px;
+}
+
+.search input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+.fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #07051a;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+form:hover,
+form:valid{
+    width: 150px;
+    cursor: pointer;
+}
+
+form:hover input,
+form:valid input{
+    display: block;
+}
+
+form:hover .fa,
+form:valid .fa{
+    background: #07051a;
+    color: white;
+}
+#home {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    width: inherit;
+    margin-top: 40px;
+    align-items: center;
+    position: relative;
+}
+.radio-image {
+    width: 400%;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    max-height: 665px;
+}
+.image-items {
+    width: 25%;
+    transition: 1s;
+}
+.button-set {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+}
+.btn-radio {
+    width: 15px;
+    height: 15px;
+    border: solid rgb(255, 8, 8) 2px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.btn-radio + .btn-radio {
+    margin-left: 2em;
+}
+.btn-radio {
+    width: 15px;
+    height: 15px;
+    border: solid rgb(255, 8, 8) 2px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.radio2 {
+    margin-left: -25%;
+}
+.radio3 {
+    margin-left: -50%;
+}
+.radio4 {
+    margin-left: -75%;
+}
+.btn-radio:hover {
+    cursor: pointer;
+    background-color: red;
+}

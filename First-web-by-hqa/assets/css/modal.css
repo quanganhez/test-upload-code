@@ -1,0 +1,106 @@
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-transform: none;
+    display: none;
+    animation: fadeAndScale2 0.8s cubic-bezier(.39,-1.05,.58,1.95);
+    transform-origin: center bottom;
+}
+.modal-overlay {
+    background: #fff;
+    width: 900px;
+    max-width: calc(100%-32px);
+    min-height: 200px;
+    position: relative;
+}
+.modal-header {
+    background-color: #ff0000;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px;
+}
+.ti-briefcase {
+    margin-right: 16px;
+}
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    font-size: 20px;
+    padding: 16px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.modal-close:hover {
+    opacity: 1;
+}
+.modal-body {
+    padding: 16px;
+}
+.modal-label {
+    display: block;
+    font-size: 15px;
+    color: black;
+    margin-bottom: 12px;
+}
+.modal-input {
+    border: 1px solid #ccc;
+    width: 96%;
+    padding: 9px;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+#buy-tickets {
+    background: #ff0000;
+    border: none;
+    color: #fff;
+    width: 99%;
+    font-size: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+#buy-tickets:hover {
+    opacity: 0.9;
+}
+.modal-footer {
+    padding: 2px;
+    text-align: right;
+    color: black;
+}
+.modal-footer a {
+    color: #2196f3;
+    text-decoration: underline;
+    margin-right: 10px;
+}
+.modal.open {
+    display: flex;
+}
+ /* @keyframes chỉ định mã hoạt ảnh.  */
+
+ @keyframes fadeAndScale2 {
+    0% {
+        opacity: 0;
+        transform: scale3d(.75,.75,1);
+    }
+
+    40% {
+        opacity: 0;
+        transform: scale3d(.75,.75,1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale3d(1,1,1);
+    }
+}
